@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom left,
+    hsl(15.91, 100%, 45.1%) 0%,
+    hsl(10.67, 79.6%, 49.9%) 8.1%,
+    hsl(4.83, 73.9%, 53.93%) 15.7%,
+    hsl(357.77, 66.66%, 56.14%) 22.8%,
+    hsl(349.85, 59.48%, 55.35%) 29.5%,
+    hsl(340.66, 51.12%, 54.23%) 35.9%,
+    hsl(328.9, 41.98%, 52.79%) 42.1%,
+    hsl(312.03, 32.45%, 50.98%) 48.1%,
+    hsl(287.16, 31.03%, 51.99%) 54.1%,
+    hsl(265.93, 38.03%, 55.79%) 60%,
+    hsl(248.52, 45.23%, 59.15%) 66.1%,
+    hsl(234.04, 54.94%, 59.84%) 72.3%,
+    hsl(224.77, 65.81%, 57.23%) 78.7%,
+    hsl(218.48, 73.9%, 53.93%) 85.4%,
+    hsl(213.78, 79.6%, 49.9%) 92.5%,
+    hsl(210, 100%, 45.1%) 100%
+  );
+  background-size: 100vw 100vh;
+}
+
+.signIN-container {
+  margin: 320px auto;
+  width: 400px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+.heading {
+  color: black;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 900;
+}
+
+.signIN-text {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+.signIN-btn {
+  width: 100px;
+  margin-left: 125px;
+  border: transparent;
+  border-radius: 10px;
+}
+
+.signIN-btn:hover {
+  background-color: rgb(149, 112, 184);
+}
+
+.room-container {
+  margin: 350px auto;
+  width: 450px;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  width: 380px;
+  border: transparent;
+  border-radius: 10px;
+  padding-left: 8px;
+  margin-bottom: 20px;
+  background: rgb(244, 238, 238);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.enter-btn {
+  width: 100px;
+  border: transparent;
+  border-radius: 10px;
+  background: rgb(176, 93, 176);
+  color: white;
+  width: 80px;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.signout-btn {
+  width: 100px;
+  border: transparent;
+  border-radius: 10px;
+  background: rgb(176, 93, 176);
+  color: white;
+  width: 80px;
+  padding: 5px;
+  margin-right: 40px;
+}
+
+.chat-container {
+  margin: 200px auto;
+  width: 450px;
+  padding-left: 32px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background: white;
+  border-radius: 10px;
+}
+
+.chatname {
+  border: transparent;
+  width: 380px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 5px;
+  color: white;
+  background: rgb(176, 93, 176);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-container-chat {
+  width: 300px;
+  border: transparent;
+  padding-left: 8px;
+  margin-bottom: 5px;
+  background: rgb(244, 238, 238);
+  margin-top: 15px;
+}
+
+.send-btn {
+  width: 100px;
+  border: transparent;
+  background: rgb(176, 93, 176);
+  color: white;
+  width: 80px;
+}
+
+.username {
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.chat-signout {
+  align-items: center;
+}
+
+.signout2-btn {
+  width: 100px;
+  border: transparent;
+  background: rgb(176, 93, 176);
+  color: white;
+  width: 80px;
+  padding: 5px;
+  margin-left: 150px;
+  margin-top: 25px;
+}

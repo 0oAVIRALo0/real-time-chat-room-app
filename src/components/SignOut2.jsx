@@ -1,15 +1,15 @@
-const SignOut = ({ handleSignOut }) => {
+const SignOut2 = ({ handleSignOut }) => {
   const handleOnClick = () => {
     handleSignOut();
   };
 
   return (
     <div>
-      <button className="signout-btn" onClick={handleOnClick}>
+      <button className="signout2-btn" onClick={handleOnClick}>
         Sign Out
       </button>
     </div>
   );
 };
 
-export default SignOut;
+export default SignOut2;

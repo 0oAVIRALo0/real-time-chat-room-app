@@ -1,3 +1,4 @@
+import SignOut2 from "./SignOut2";
 import { useState } from "react";
 import {
   addDoc,
@@ -11,7 +12,7 @@ import {
 import { auth, db } from "../firebase-config";
 import { useEffect } from "react";
 
-const Chat = ({ enterRoom }) => {
+const Chat = ({ enterRoom, handleSignOut }) => {
   const [newMsg, setNewMsg] = useState("");
 
   const messagesRef = collection(db, "messages");
@@ -54,27 +55,39 @@ const Chat = ({ enterRoom }) => {
   };
 
   return (
-    <div>
+    <div className="chat-container">
       <div>
-        <h1>Welcome to: {enterRoom.toUpperCase()}</h1>
+        <h1 className="chatname">Welcome to: {enterRoom.toUpperCase()}</h1>
       </div>
       <div>
         {messages.map((message) => (
           <div key={message.id}>
-            <span>{message.user}</span>
-            {message.text}
+            <span className="username">{message.user}:</span>
+            <span className="message-text">{message.text}</span>
           </div>
         ))}
       </div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Type your message here..."
-          value={newMsg}
-          onChange={handleOnChange}
-        />
-        <button type="submit">Send</button>
-      </form>
+
+      <div>
+        <div className="form-conatiner">
+          <form onSubmit={handleSubmit}>
+            <input
+              className="input-container-chat"
+              type="text"
+              placeholder="Type your message here..."
+              value={newMsg}
+              onChange={handleOnChange}
+            />
+            <button className="send-btn" type="submit">
+              Send
+            </button>
+          </form>
+        </div>
+        <SignOut2
+          className="chat-signout"
+          handleSignOut={handleSignOut}
+        ></SignOut2>
+      </div>
     </div>
   );
 };

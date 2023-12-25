@@ -17,9 +17,12 @@ const SignIn = ({ setIsAuth }) => {
   };
 
   return (
-    <div className="auth">
-      <p>Sign in with Google to continue</p>
-      <button onClick={handleSignIn}>Sign in with Google</button>
+    <div className="signIN-container">
+      <h1 className="heading">Chat with your friends!</h1>
+      <p className="signIN-text">Sign in with Google to continue</p>
+      <button className="signIN-btn" onClick={handleSignIn}>
+        Sign in
+      </button>
     </div>
   );
 };

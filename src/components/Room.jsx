@@ -1,6 +1,7 @@
+import SignOut from "./SignOut";
 import { useState } from "react";
 
-const Room = ({ setRoomValue }) => {
+const Room = ({ setRoomValue, handleSignOut }) => {
   const [roomName, setRoomName] = useState("");
 
   const handleOnClick = () => {
@@ -12,10 +13,20 @@ const Room = ({ setRoomValue }) => {
   };
 
   return (
-    <div>
+    <div className="room-container">
       <label>Enter Room Name:</label>
-      <input type="text" value={roomName} onChange={handleOnChange} />
-      <button onClick={handleOnClick}>Enter</button>
+      <input
+        className="input-container"
+        type="text"
+        value={roomName}
+        onChange={handleOnChange}
+      />
+      <div className="btn-container">
+        <button className="enter-btn" onClick={handleOnClick}>
+          Enter
+        </button>
+        <SignOut handleSignOut={handleSignOut}></SignOut>
+      </div>
     </div>
   );
 };

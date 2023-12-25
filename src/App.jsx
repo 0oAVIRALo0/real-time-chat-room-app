@@ -2,11 +2,12 @@ import SignIn from "./components/SignIn";
 import Room from "./components/Room";
 import Chat from "./components/Chat";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
-
+import { signOut } from "firebase/auth";
 import Cookies from "universal-cookie";
-// import SignOut from "./components/SignOut";
+import { auth } from "./firebase-config";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 const cookies = new Cookies();
 
 function App() {
@@ -15,6 +16,13 @@ function App() {
 
   const handleSetRoomValue = (roomName) => {
     setEnterRoom(roomName);
+  };
+
+  const handleSignOut = async () => {
+    await signOut(auth);
+    cookies.remove("auth-token");
+    setIsAuth(false);
+    setEnterRoom(null);
   };
 
   if (!isAuth) {
@@ -28,13 +36,16 @@ function App() {
   if (enterRoom) {
     return (
       <div>
-        <Chat enterRoom={enterRoom}></Chat>
+        <Chat enterRoom={enterRoom} handleSignOut={handleSignOut}></Chat>
       </div>
     );
   } else {
     return (
       <div>
-        <Room setRoomValue={handleSetRoomValue}></Room>
+        <Room
+          setRoomValue={handleSetRoomValue}
+          handleSignOut={handleSignOut}
+        ></Room>
       </div>
     );
   }
