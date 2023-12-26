@@ -21,12 +21,12 @@ Clone the repository
 
 Install vite globally using this command
   ``` jsx 
-  npm install -D vite
+  -> npm install -D vite
   ```
 
 Run the application
   ``` jsx 
-  npm run dev
+  -> npm run dev
   ```
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
