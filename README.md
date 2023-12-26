@@ -1,3 +1,30 @@
+# Chat room app
+
+This is a real-time chat room application developed using ReactJS for the frontend and Firebase for the backend.
+
+Features:
+- Real-time Messaging: Utilizes Firebase's real-time database to enable instant messaging between users.
+- User Authentication: Firebase Authentication manages user sign-up using google.
+- Responsive Design: Developed with a responsive layout to ensure usability across various devices.
+
+Installation:
+
+Prerequisites
+  Node.js installed
+
+Steps
+
+Clone the repository
+  ```git clone https://github.com/0oAVIRALo0/real-time-chat-room-app.git ```
+
+Install vite globally using this command
+  ``` npm install -D vite ```
+
+Run the application
+  ``` npm run dev ```
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
