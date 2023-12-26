@@ -15,13 +15,19 @@ Prerequisites
 Steps
 
 Clone the repository
-  ```git clone https://github.com/0oAVIRALo0/real-time-chat-room-app.git ```
+  ``` jsx
+  -> git clone https://github.com/0oAVIRALo0/real-time-chat-room-app.git
+  ```
 
 Install vite globally using this command
-  ``` npm install -D vite ```
+  ``` jsx 
+  npm install -D vite
+  ```
 
 Run the application
-  ``` npm run dev ```
+  ``` jsx 
+  npm run dev
+  ```
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
